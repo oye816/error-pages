@@ -102,7 +102,7 @@
     // {{ if l10n_enabled }}
     if (navigator.language.substring(0, 2).toLowerCase() !== 'en') {
         ((s, p) => { // localize the page (details here - https://github.com/tarampampam/error-pages/tree/master/l10n)
-            s.src = 'https://cdn.jsdelivr.net/gh/oye816/error-pages/l10n/l10n.min.js'; // '../l10n/l10n.js';
+            s.src = 'https://cdn.jsdelivr.net/gh/oye816/error-pages@latest/l10n/l10n.min.js'; // '../l10n/l10n.js';
             s.async = s.defer = true;
             s.addEventListener('load', () => p.removeChild(s));
             p.appendChild(s);
